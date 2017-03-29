@@ -20575,3 +20575,18 @@ Completed 200 OK in 120ms (Views: 99.7ms | ActiveRecord: 0.8ms)
 >>>>>>> b9c17fc1d7f9c98e00e084cbe3e4c73a6b986d1c
 
 
+Started GET "/" for ::1 at 2017-03-29 13:47:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-03-29 13:47:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1202ms (Views: 1185.8ms | ActiveRecord: 1.0ms)
+
+
